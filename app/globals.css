@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-neutral-bg text-neutral-text-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-neutral-text-dark;
+}
+
+.big-shadow {
+  box-shadow: 0px 0px 144px 0px #00004799;
+  transition: all 200ms;
+}
+
+.big-shadow:hover {
+  box-shadow: 4px 4px 0px 4px #000000;
+  transform: translate(-2px, -2px);
+}
+
+.big-shadow:active {
+  box-shadow: 2px 2px 0px 2px #000000;
+  transform: translate(0);
+}
+
+.btn {
+  @apply font-semibold py-1 px-4 rounded-md inline-block;
+}
+
+.btn.btn-pri-dark {
+  @apply bg-primary text-white;
+}
+
+.btn.btn-pri-light {
+  @apply bg-white text-primary;
+}
+
+.btn.btn-sec {
+  @apply border-2 border-white;
+}

@@ -15,23 +15,33 @@ h6 {
   @apply text-neutral-text-dark;
 }
 
-.big-shadow {
-  box-shadow: 0px 0px 144px 0px #00004799;
-  transition: all 200ms;
+h1 {
+  font-size: 4rem;
+  line-height: 0.8;
 }
 
-.big-shadow:hover {
+h2 {
+  font-size: 2rem;
+}
+
+.big-shadow {
+  box-shadow: 0px 0px 144px 0px #00004799;
+}
+
+.btn {
+  @apply font-semibold rounded-md inline-block transition-all duration-200;
+}
+
+.btn:hover,
+.faq-btn:hover {
   box-shadow: 4px 4px 0px 4px #000000;
   transform: translate(-2px, -2px);
 }
 
-.big-shadow:active {
+.btn:active,
+.faq-btn:active {
   box-shadow: 2px 2px 0px 2px #000000;
   transform: translate(0);
-}
-
-.btn {
-  @apply font-semibold py-1 px-4 rounded-md inline-block;
 }
 
 .btn.btn-pri-dark {

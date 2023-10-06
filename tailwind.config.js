@@ -17,8 +17,8 @@ module.exports = {
         neutral: {
           bg: "#f5f5f5",
           text: {
-            light: "#666666",
-            dark: "#333333",
+            light: "#555555",
+            dark: "#222222",
           },
         },
         accent: "#d73737",

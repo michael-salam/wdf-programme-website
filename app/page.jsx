@@ -9,7 +9,7 @@ import goldStar from "../assets/gold-star.svg";
 import { faqs, reviews } from "@/data";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function LandingPage() {
   const [visbleFAQ, setVisbleFAQ] = useState(null)
 
   const handleShowFAQ = (faqID) => {
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main>
       <header className="text-center py-[10vh] w-[90%] md:w-4/5 mx-auto">
-        <h1 className="font-black mb-4">
+        <h1 className="mb-4">
           The Web Developer Foundations Programme
         </h1>
         <p className="text-xl max-w-[60ch] mx-auto">
@@ -74,7 +74,7 @@ export default function Home() {
         </div>
 
         <Link
-          href="/"
+          href="/login"
           className="big-shadow btn btn-pri-dark text-2xl mt-8 py-3 px-6"
         >
           Leave a review

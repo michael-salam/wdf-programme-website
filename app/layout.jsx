@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             </Link>
 
             <ul className='flex gap-4 items-center text-sm sm:text-base'>
-              <li><Link href='/' className='btn btn-sec py-1 px-4'>Leave a review</Link></li>
+              <li><Link href='/login' className='btn btn-sec py-1 px-4'>Leave a review</Link></li>
               <li><Link href='/' className='btn btn-pri-light py-1 px-4'>Get resources</Link></li>
             </ul>
           </div>

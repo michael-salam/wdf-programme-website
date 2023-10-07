@@ -20,12 +20,12 @@ export default function RootLayout({ children }) {
     <html lang="en" className={leagueSpartan.className}>
       <body>
         <nav className='bg-primary text-white p-4'>
-          <div className='flex justify-between items-center w-4/5 mx-auto'>
+          <div className='flex justify-between items-center flex-wrap gap-4 w-[95%] sm:w-4/5 mx-auto'>
             <Link href="/" className='font-black'>
               <Image src={logo} alt="WDF Logo" />
             </Link>
 
-            <ul className='flex gap-4 items-center'>
+            <ul className='flex gap-4 items-center text-sm sm:text-base'>
               <li><Link href='/' className='btn btn-sec py-1 px-4'>Leave a review</Link></li>
               <li><Link href='/' className='btn btn-pri-light py-1 px-4'>Get resources</Link></li>
             </ul>

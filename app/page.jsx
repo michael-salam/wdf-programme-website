@@ -6,7 +6,7 @@ import Link from "next/link";
 
 // import images
 import goldStar from "../assets/gold-star.svg";
-import { faqs } from "@/data";
+import { faqs, reviews } from "@/data";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
   }
   return (
     <main>
-      <header className="text-center py-24 w-4/5 mx-auto">
+      <header className="text-center py-[10vh] w-[90%] md:w-4/5 mx-auto">
         <h1 className="font-black mb-4">
           The Web Developer Foundations Programme
         </h1>
@@ -25,91 +25,34 @@ export default function Home() {
           Give yourself a great start to mastering the skill of web development
           by conquering the fundamentals first.
         </p>
+        <Link
+          href="/"
+          className="big-shadow btn btn-pri-dark text-2xl px-16 py-4 mt-8"
+        >
+          Get resources
+        </Link>
 
-        <div className="grid grid-cols-3 gap-4 my-16 text-black">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              impedit, quos consectetur quam animi molestias?
-            </p>
-            <div className="flex items-center justify-center mt-2 gap-4">
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-            </div>
-            <p className="text-xl font-bold mt-4">Dev Newton</p>
-          </div>
-
-          <div className="header-cta">
-            <Link
-              href="/"
-              className="big-shadow btn btn-pri-dark text-2xl w-full py-5"
-            >
-              Get resources
-            </Link>
-          </div>
-
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              impedit, quos consectetur quam animi molestias?
-            </p>
-            <div className="flex items-center justify-center mt-2 gap-4">
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-            </div>
-            <p className="text-xl font-bold mt-4">Dev Nwafor</p>
-          </div>
-
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              impedit, quos consectetur quam animi molestias?
-            </p>
-            <div className="flex items-center justify-center mt-2 gap-4">
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-            </div>
-            <p className="text-xl font-bold mt-4">Dev Freedom</p>
-          </div>
-
-          <div>
-            <p>
-              thisLorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              impedit, quos consectetur quam animi molestias?
-            </p>
-            <div className="flex items-center justify-center mt-2 gap-4">
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-            </div>
-            <p className="text-xl font-bold mt-4">Dev Sophia</p>
-          </div>
-
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              impedit, quos consectetur quam animi molestias?
-            </p>
-            <div className="flex items-center justify-center mt-2 gap-4">
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-              <Image src={goldStar} alt="Gold star" />
-            </div>
-            <p className="text-xl font-bold mt-4">Dev Funmilayo</p>
-          </div>
+        <div className="grid gap-8 review-grid-template my-[10vh] text-black">
+          {
+            reviews.map(review => (
+              <div key={review.id} className="max-w-xs mx-auto">
+                <p>
+                  {review.message}
+                </p>
+                <div className="flex items-center justify-center mt-2 gap-1">
+                  {
+                    [...Array(5)].map((star, index) => {
+                      const currentRating = index + 1
+                      return (
+                        <Image className={currentRating > review.stars && "opacity-30"} src={goldStar} alt="Gold star" />
+                      )
+                    })
+                  }
+                </div>
+                <p className="text-xl font-bold mt-4">{review.name}</p>
+              </div>
+            ))
+          }
         </div>
 
         <Link
@@ -120,13 +63,15 @@ export default function Home() {
         </Link>
       </header>
 
-      <section className="bg-[#ebebeb] py-16 text-center">
-        <h2 className="font-bold">
-          Haven’t left a review yet? Log in to leave one now!
-        </h2>
-        <p className="text-2xl">
-          If you were part of the first cohort, you can leave a review.
-        </p>
+      <section className="bg-[#ebebeb] py-[10vh] px-4 text-center">
+        <div className="max-w-[85%] sm:max-w-[60%] mx-auto">
+          <h2 className="font-bold mb-4">
+            Haven’t left a review yet? Log in to leave one now!
+          </h2>
+          <p className="text-xl">
+            If you were part of the first cohort, you can leave a review.
+          </p>
+        </div>
 
         <Link
           href="/"
@@ -136,7 +81,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <section className="my-24 w-4/5 mx-auto">
+      <section className="my-[12vh] w-[90%] md:w-4/5 mx-auto">
         <div className="text-center mb-8">
           <h2 className="font-bold">FAQs</h2>
           <p className="text-2xl">Click on a question to expand</p>
@@ -145,8 +90,8 @@ export default function Home() {
         {
           faqs.map(faq => (
             <div key={faq.id} className="mb-4 last:mb-0">
-              <button onClick={() => handleShowFAQ(faq.id)} className="faq-btn flex justify-between items-center text-white transition-all w-full px-4 py-2 rounded-md bg-primary">
-                <span className="font-bold text-xl">
+              <button onClick={() => handleShowFAQ(faq.id)} className="faq-btn flex justify-between items-center gap-4 text-white transition-all w-full px-4 py-2 rounded-md bg-primary">
+                <span className="font-semibold sm:text-xl text-left">
                   {faq.question}
                 </span>
                 <span className="font-black text-4xl">{visbleFAQ === faq.id ? "-" : "+"}</span>

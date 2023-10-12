@@ -72,6 +72,6 @@ input[type="password"] {
   box-shadow: 0px 0px 144px 0px #00004755;
 }
 
-.review-grid-template {
+.auto-grid-template {
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }

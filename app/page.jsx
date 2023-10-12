@@ -4,10 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { faqs, reviews } from "@/data";
+
+import Footer from "@/components/Footer";
+
 // import images
 import goldStar from "../assets/gold-star.svg";
-import { faqs, reviews } from "@/data";
-import Footer from "@/components/Footer";
 
 export default function LandingPage() {
   const [visbleFAQ, setVisbleFAQ] = useState(null)
@@ -26,13 +28,13 @@ export default function LandingPage() {
           by conquering the fundamentals first.
         </p>
         <Link
-          href="/"
+          href="/get-resources"
           className="big-shadow btn btn-pri-dark text-2xl px-16 py-4 mt-8"
         >
           Get resources
         </Link>
 
-        <div className="grid gap-8 review-grid-template my-[10vh] text-black">
+        <div className="grid gap-8 auto-grid-template my-[10vh] text-black">
           {
             reviews.map(review => (
               <div key={review.id} className="max-w-xs mx-auto">
@@ -63,7 +65,7 @@ export default function LandingPage() {
         </Link>
       </header>
 
-      <section className="bg-[#ebebeb] py-[10vh] px-4 text-center">
+      <section className="bg-[#] py-[10vh] px-4 text-center">
         <div className="max-w-[85%] sm:max-w-[60%] mx-auto">
           <h2 className="font-bold mb-4">
             Haven’t left a review yet? Log in to leave one now!

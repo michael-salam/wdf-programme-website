@@ -32,7 +32,7 @@ const MyReview = () => {
                             [...Array(5)].map((star, index) => {
                                 const currentRating = index + 1
                                 return (
-                                    <Image className={currentRating > review.stars && "opacity-30"} src={goldStar} alt="Gold star" />
+                                    <Image key={index} className={currentRating > review.stars ? "opacity-30" : null} src={goldStar} alt="Gold star" />
                                 )
                             })
                         }

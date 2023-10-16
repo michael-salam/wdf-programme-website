@@ -24,20 +24,20 @@ const GetResources = () => {
 
                 <div className="flex flex-col sm:flex-row gap-8 mt-16 text-primary">
                     <div className="p-8 bg-[#ebebeb] rounded-md flex-1 flex flex-col justify-between">
-                        <h2 className="font-black">Basic</h2>
+                        {/* <h2 className="font-black">Basic</h2> */}
                         <ul className="my-4 text-left">
                             {features.map(item => (
                                 <li className="bg-white p-4 my-2 rounded-md flex items-center gap-4" key={item.id}>
-                                    {item.isPremium ? <span className="text-red-600 font-black">&#128473;</span> : <span className="text-green-600 font-black">&#10003;</span>}
+                                    {/* {item.isPremium ? <span className="text-red-600 font-black">&#128473;</span> : <span className="text-green-600 font-black">&#10003;</span>} */}
                                     <span>{item.feature}</span>
                                 </li>
                             ))}
                         </ul>
-                        <p className="font-black text-3xl">&#8358;15,000</p>
+                        <p className="font-black text-3xl">&#8358;20,000</p>
                         <a href="/" className="btn btn-pri-dark text-xl p-4 mt-4">I want this</a>
                     </div>
 
-                    <div className="p-8 bg-primary rounded-md flex-1 flex flex-col justify-between">
+                    {/* <div className="p-8 bg-primary rounded-md flex-1 flex flex-col justify-between">
                         <h2 className="font-black text-white">Premium</h2>
                         <ul className="my-4 text-left">
                             {features.map(item => (
@@ -49,7 +49,7 @@ const GetResources = () => {
                         </ul>
                         <p className="font-black text-3xl text-white">&#8358;20,000</p>
                         <a href="/" className="btn btn-pri-light text-xl p-4 mt-4">I want this</a>
-                    </div>
+                    </div> */}
                 </div>
             </header>
 

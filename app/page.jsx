@@ -46,7 +46,7 @@ export default function LandingPage() {
                     [...Array(5)].map((star, index) => {
                       const currentRating = index + 1
                       return (
-                        <Image className={currentRating > review.stars && "opacity-30"} src={goldStar} alt="Gold star" />
+                        <Image key={index} className={currentRating > review.stars ? "opacity-30" : null} src={goldStar} alt="Gold star" />
                       )
                     })
                   }
@@ -92,7 +92,7 @@ export default function LandingPage() {
         {
           faqs.map(faq => (
             <div key={faq.id} className="mb-4 last:mb-0">
-              <button onClick={() => handleShowFAQ(faq.id)} className="faq-btn flex justify-between items-center gap-4 text-white transition-all w-full px-4 py-2 rounded-md bg-primary">
+              <button onClick={() => handleShowFAQ(faq.id)} className="border-b border-neutral-text-light text-neutral-text-dark flex justify-between items-center gap-4 w-full">
                 <span className="font-semibold sm:text-xl text-left">
                   {faq.question}
                 </span>

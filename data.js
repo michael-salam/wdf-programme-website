@@ -46,40 +46,40 @@ export const reviews = [
 export const faqs = [
   {
     id: 0,
-    question: "What is the purpose of the WDF Programme?",
+    question: "What is the Web Developer Foundations Programme?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
+      "The Web Developer Foundations programme is a 6-week live online programme that ran from 1st September to 8th October 2023.",
   },
   {
     id: 1,
-    question: "How long does the WDF programme last?",
+    question: "What is the purpose of the Web Developer Foundations programme?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
+      "The programme aims to make beginner developers truly understand fundamental concepts so that they won't have to go back to relearn concepts constantly. The deep knowwledge of foundational concepts will allow them go on to create even more complex projects easily in the future.",
   },
   {
     id: 2,
-    question: "What is the purpose of the WDF Programme?",
+    question: "How can I be a part of the Web Developer Foundations programme?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
+      'Unfourtunately, the Web Developer Foundations programme already ended on the 8th of October, 2023. However, you can get access to all the replays of the live classes, resources used, as well as mentorship for as long as necessary. Just click "Get resources" anywhere on this website.',
   },
-  {
-    id: 3,
-    question: "What is the purpose of the WDF Programme?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
-  },
-  {
-    id: 4,
-    question: "What is the purpose of the WDF Programme?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
-  },
-  {
-    id: 5,
-    question: "What is the purpose of the WDF Programme?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
-  },
+  // {
+  //   id: 3,
+  //   question: "What is the purpose of the WDF Programme?",
+  //   answer:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
+  // },
+  // {
+  //   id: 4,
+  //   question: "What is the purpose of the WDF Programme?",
+  //   answer:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
+  // },
+  // {
+  //   id: 5,
+  //   question: "What is the purpose of the WDF Programme?",
+  //   answer:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae in fugiat? Earum nesciunt veniam a corporis laudantium saepe optio dolor minus. Ipsum ab suscipit eos fugiat odio totam reprehenderit. Ab optio nostrum porro explicabo, ex impedit, itaque sit nisi, sint illo aspernatur velit cupiditate atque odit fugiat temporibus necessitatibus.",
+  // },
 ];
 
 export const features = [

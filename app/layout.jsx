@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
               </ul>
             </div>
           </nav>
-          <Banner />
+          {/* <Banner /> */}
         </div>
 
         {children}

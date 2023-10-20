@@ -117,7 +117,7 @@ export default function LandingPage() {
         </div>
 
         <Link
-          href="/login"
+          href="/get-resources"
           className="big-shadow btn btn-pri-dark text-2xl mt-8 py-3 px-6"
         >
           Get resources

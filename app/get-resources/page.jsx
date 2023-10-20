@@ -33,7 +33,7 @@ const GetResources = () => {
                                 </li>
                             ))}
                         </ul>
-                        <p className="font-black text-3xl">&#8358;20,000</p>
+                        {/* <p className="font-black text-3xl">&#8358;20,000</p> */}
                         <a href="/" className="btn btn-pri-dark text-xl p-4 mt-4">I want this</a>
                     </div>
 
